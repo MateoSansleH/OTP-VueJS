@@ -32,6 +32,7 @@ onMounted(loadOtps)
           🔑 {{ otp.id}}
         </router-link>
         <span v-if="otp.used" class="text-red-600 ml-2">(utilisé)</span>
+        <span v-if="otp.expired" class="text-gray-400 ml-2">(expiré)</span>
       </li>
     </ul>
   </div>
